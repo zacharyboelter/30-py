@@ -13,12 +13,17 @@ print(euclid_distance(10, 4, 6, 8))
 print(euclid_distance(2, 60, 6, 8))
 
 
-def is_square(n):
-    if n < 0:
-        return False
+# def is_square(n):
+#     if n < 0:
+#         return False
     
-    square = math.isqrt(n)
-    return square ** 2 == n
+#     square = math.isqrt(n)
+#     return square ** 2 == n
+
+
+def is_square(n):
+    return n > -1 and math.sqrt(n) % 1 == 0
+
 print(is_square(0))
 print(is_square(-1))
 print(is_square(25))
