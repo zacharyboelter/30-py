@@ -6,3 +6,6 @@ Function takes four parameters, one for each x and y point (2 dimentions). Take 
 ### 2. Given an integral number, determine if it's a square number.
 Check if n is less than zero to remove negative intergers. 
 Get square root of n, check if n equals square ** 2.
+
+### 3. Summation
+Set sum to zero. For loop that starts at 1 and goes to num (parameter) + 1. Add each iteration to sum. Return.

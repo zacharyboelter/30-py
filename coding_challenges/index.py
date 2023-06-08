@@ -7,11 +7,6 @@ def euclid_distance(x1, y1, x2, y2):
     distance = math.sqrt((x2 - x1)**2 + (y2 - y1) **2 )
     return distance
 
-print(euclid_distance(2, 4, 6, 8))
-print(euclid_distance(2, 3, 10, 8))
-print(euclid_distance(10, 4, 6, 8))
-print(euclid_distance(2, 60, 6, 8))
-
 
 # def is_square(n):
 #     if n < 0:
@@ -24,9 +19,14 @@ print(euclid_distance(2, 60, 6, 8))
 def is_square(n):
     return n > -1 and math.sqrt(n) % 1 == 0
 
-print(is_square(0))
-print(is_square(-1))
-print(is_square(25))
-print(is_square(26))
-print(is_square(100))
-print(is_square(121))
+
+
+def summation(num):
+    sum = 0
+    for i in range(1, num + 1):
+        sum += i
+    return sum
+
+print(summation(5))
+print(summation(966128))
+print(summation(-10))
