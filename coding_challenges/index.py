@@ -32,14 +32,17 @@ def is_square(n):
 def summation(num):
     return sum(range(num + 1))
 
-def validate_pin(pin):
-    if len(pin) == 4 or len(pin) == 6:
-        if pin.isdigit():
-            return True
-    return False
+# def validate_pin(pin):
+#     if len(pin) == 4 or len(pin) == 6:
+#         if pin.isdigit():
+#             return True
+#     return False
 
-print(validate_pin('1234'))
-print(validate_pin('123f'))
-print(validate_pin('12334'))
-print(validate_pin('.ah'))
-print(validate_pin('555584'))
+def validate_pin(pin):
+    return len(pin) in (4, 6) and pin.isdigit()
+
+print(validate_pin('3333'))
+print(validate_pin('444444'))
+print(validate_pin('123d'))
+print(validate_pin('123'))
+print(validate_pin('....'))
