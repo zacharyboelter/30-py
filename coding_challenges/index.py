@@ -32,7 +32,3 @@ def is_square(n):
 def summation(num):
     return sum(range(num + 1))
 
-print(summation(5))
-print(summation(966128))
-print(summation(-10))
-print(summation(10))
