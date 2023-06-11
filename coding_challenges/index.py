@@ -66,12 +66,12 @@ def filter_list(l):
 def divisors(n):
     count = []
     for i in range (1, int(n ** .5) + 1):
-        if n % 1 == 0:
+        if n % i == 0:
             count.append(i)
             if i * i != n:
                 count.append(n // i)
     return len(count)
 
 print(divisors(30))
-print(divisors(500))
+print(divisors(600))
 print(divisors(4))
