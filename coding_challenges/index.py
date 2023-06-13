@@ -75,3 +75,10 @@ def divisors(n):
 print(divisors(30))
 print(divisors(600))
 print(divisors(4))
+
+
+def is_anagram(test, original):
+    str1 = test.lower()
+    str2 = original.lower()
+    return sorted(str1) == sorted(str2)
+

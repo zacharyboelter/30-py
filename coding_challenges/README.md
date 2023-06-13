@@ -21,3 +21,6 @@ Create a function that takes a list of non-negative integers and strings and ret
 
 ### 7. Count the number of divisors
 Set count to empty list. Iterate over the numbers from 1 to the square root of n. Check if n is divisible by current number. If n is divisible by the current number, then that number is added to the list of divisors. Check if the current number is the sqrt of n. If the current number is not the square root of n, then n is divided by the current number and the result is added to the list of divisors. return the length of count.
+
+### 8. Anagram Detection
+Set parameters to variables, lower case. If, when sorted, they match, return true. Else, false.
