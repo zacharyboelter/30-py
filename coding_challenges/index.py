@@ -82,3 +82,5 @@ def is_anagram(test, original):
     str2 = original.lower()
     return sorted(str1) == sorted(str2)
 
+def anablam(t, o):
+    return sorted(t.lower()) == 
