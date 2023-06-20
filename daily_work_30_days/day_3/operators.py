@@ -9,4 +9,4 @@ def area():
     total = (0.5 * base * height)
     print(f"The area of your triangle is {total}")
 
-area()
+print(area())
