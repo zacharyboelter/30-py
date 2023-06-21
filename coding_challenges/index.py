@@ -72,9 +72,9 @@ def divisors(n):
                 count.append(n // i)
     return len(count)
 
-print(divisors(30))
-print(divisors(600))
-print(divisors(4))
+# print(divisors(30))
+# print(divisors(600))
+# print(divisors(4))
 
 
 def is_anagram(test, original):
@@ -82,5 +82,13 @@ def is_anagram(test, original):
     str2 = original.lower()
     return sorted(str1) == sorted(str2)
 
-def anablam(t, o):
-    return sorted(t.lower()) == 
+# def anablam(t, o):
+#     return sorted(t.lower()) == 
+
+
+def fibonnaci(n):
+    if n == 0 or n == 1:
+        return n
+    else: return (fibonnaci(n-1) + fibonnaci(n-2))
+
+print(fibonnaci(40))
