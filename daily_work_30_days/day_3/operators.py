@@ -10,3 +10,5 @@ def area():
     print(f"The area of your triangle is {total}")
 
 print(area())
+
+
