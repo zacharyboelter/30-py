@@ -92,3 +92,14 @@ def fibonnaci(n):
     else: return (fibonnaci(n-1) + fibonnaci(n-2))
 
 print(fibonnaci(40))
+
+
+class Solution(object):
+    def two_sum(self, nums, target):
+        compliment_map = {}
+        for i, num in enumerate(nums):
+            if num in compliment_map:
+                return [compliment_map[num], i]
+            compliment = target - num
+            compliment_map[compliment] = i
+        return []
