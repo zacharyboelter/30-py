@@ -25,7 +25,7 @@ Set count to empty list. Iterate over the numbers from 1 to the square root of n
 ### 8. Anagram Detection
 Set parameters to variables, lower case. If, when sorted, they match, return true. Else, false.
 
-### Two Sum Problem Explanation
+### 9. Two Sum Problem 
 
 The **Two Sum** problem involves finding two numbers in an array that add up to a given target. We are required to return the indices of these two numbers.
 
