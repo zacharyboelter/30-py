@@ -24,3 +24,25 @@ Set count to empty list. Iterate over the numbers from 1 to the square root of n
 
 ### 8. Anagram Detection
 Set parameters to variables, lower case. If, when sorted, they match, return true. Else, false.
+
+### Two Sum Problem Explanation
+
+The **Two Sum** problem involves finding two numbers in an array that add up to a given target. We are required to return the indices of these two numbers.
+
+To solve this problem, we can use a hashmap (dictionary in Python) to store the complement of each number we encounter. Here's how the solution works:
+
+1. We start by creating an empty hashmap called `complement_map`. This hashmap will store the complements of the numbers we encounter.
+
+2. We iterate through the input array `nums` using a loop. For each number `num` at index `i`, we perform the following steps:
+
+3. Check if the current number `num` is already in the `complement_map` hashmap. If it is, that means we have found a pair of numbers whose sum is equal to the target. We can retrieve the index of the complement from the hashmap and return it along with the current index `i` as the answer.
+
+4. If the current number is not in the hashmap, it means we haven't found its complement yet. So, we calculate the complement by subtracting the current number from the target. This gives us the value that, when added to the current number, will give us the target sum.
+
+5. We add the complement to the `complement_map` hashmap, using the complement value as the key and the current index `i` as the value. By doing this, we are storing the complement for future reference.
+
+6. If we have iterated through the entire array and haven't found a solution yet, we return an empty list `[]` to indicate that no solution exists.
+
+By using this approach, we can find the indices of two numbers in the input array that add up to the target sum.
+
+The time complexity of this solution is O(n) since we iterate through the input array once. The space complexity is O(n) to store the complement hashmap.
