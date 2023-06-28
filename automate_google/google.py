@@ -12,6 +12,16 @@
 #         print(f'[{left} | {right}]', end=' ')
 #     print()
 
+def multiplication_table(start, stop):
+    for x in range(start, stop + 1):
+        for y in range(start, stop + 1):
+            print(str(x*y), end=" ")
+        print()
+
+multiplication_table(1, 3)
+multiplication_table(10, 30)
+
+
 
 # teams = ['pandas', 'dragons', 'rats', 'snakes', 'clippers', 'sharks']
 
@@ -20,12 +30,12 @@
 #         if home_team != away_team:
 #             print(f"Home: {home_team.capitalize()} vs Away: {away_team.capitalize()}")
 
-def factorial(n):
-    if n < 2:
-        return 1
-    return n * factorial(n - 1)
+# def factorial(n):
+#     if n < 2:
+#         return 1
+#     return n * factorial(n - 1)
     
-print(factorial(10))
+# print(factorial(10))
 
 
 # def recursive_function(parameters):
@@ -34,10 +44,10 @@ print(factorial(10))
 #     recursive_function(modified_parameters)
 
 
-def count_users(group):
-  count = 0
-  for member in count_members(group):
-    count += 1
-    if is_group(member):
-      count += count_users(member)
-  return count
+# def count_users(group):
+#   count = 0
+#   for member in count_members(group):
+#     count += 1
+#     if is_group(member):
+#       count += count_users(member)
+#   return count
