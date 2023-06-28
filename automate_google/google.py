@@ -32,3 +32,12 @@ print(factorial(10))
 #     if base_case_condition(parameters):
 #         return base_case_value
 #     recursive_function(modified_parameters)
+
+
+def count_users(group):
+  count = 0
+  for member in count_members(group):
+    count += 1
+    if is_group(member):
+      count += count_users(member)
+  return count
