@@ -12,14 +12,14 @@
 #         print(f'[{left} | {right}]', end=' ')
 #     print()
 
-def multiplication_table(start, stop):
-    for x in range(start, stop + 1):
-        for y in range(start, stop + 1):
-            print(str(x*y), end=" ")
-        print()
+# def multiplication_table(start, stop):
+#     for x in range(start, stop + 1):
+#         for y in range(start, stop + 1):
+#             print(str(x*y), end=" ")
+#         print()
 
-multiplication_table(1, 3)
-multiplication_table(10, 30)
+# multiplication_table(1, 3)
+# multiplication_table(10, 30)
 
 
 
@@ -51,3 +51,17 @@ multiplication_table(10, 30)
 #     if is_group(member):
 #       count += count_users(member)
 #   return count
+
+
+
+
+
+num1 = 0
+num2 = 2
+
+for x in range(5):
+    num1 = x
+    for y in range(14):
+        num2 = y + 3
+    print(num1 + num2)
+    
