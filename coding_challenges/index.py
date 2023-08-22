@@ -106,4 +106,12 @@ class Solution(object):
         return []
     
 
- 
+def disemvowel(str):
+    vowels = 'aeiouAEIOU'
+    result = ''
+
+    for char in str:
+        if char not in vowels:
+            result += char
+    
+    return result
