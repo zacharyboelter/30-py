@@ -115,3 +115,15 @@ def disemvowel(str):
             result += char
     
     return result
+
+def capitals(word):
+    indecies = []
+    for index, char in enumerate(word):
+        if char.isupper():
+            indecies.append(index)
+    return indecies
+
+# Test the function
+input_word = "CodEWaRs"
+output_indices = capitals(input_word)
+print(output_indices)  # Output: [0, 3, 4, 6]
