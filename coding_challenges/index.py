@@ -127,3 +127,7 @@ def capitals(word):
 input_word = "CodEWaRs"
 output_indices = capitals(input_word)
 print(output_indices)  # Output: [0, 3, 4, 6]
+
+
+def reverse_list(l):
+    return l[::-1]
