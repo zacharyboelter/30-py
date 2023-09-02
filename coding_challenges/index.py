@@ -131,3 +131,20 @@ print(output_indices)  # Output: [0, 3, 4, 6]
 
 def reverse_list(l):
     return l[::-1]
+
+
+# Messi goals function
+
+# Messi is a soccer player with goals in three leagues:
+
+#     LaLiga
+#     Copa del Rey
+#     Champions
+
+# Complete the function to return his total number of goals in all three leagues.
+
+def goals(laLiga, copaDelRey, championsLeague):
+    return laLiga+copaDelRey+championsLeague
+
+def messiGoals(*a):
+    return sum(a)
