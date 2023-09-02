@@ -148,3 +148,17 @@ def goals(laLiga, copaDelRey, championsLeague):
 
 def messiGoals(*a):
     return sum(a)
+
+
+#LIST COMPREHENSIONS
+#new_list = [expression for item in iterable if condition]
+
+#Squares of numbers from 0 - 9
+
+#for loop
+squares = []
+for num in range(10):
+    squares.append(num ** 2)
+
+#list comprehension
+squares = [num ** 2 for num in range(10)]
