@@ -184,3 +184,24 @@ for i in range (x + 1):
         for k in range (z + 1):
             if i + j + k != n:
                 cubic_coordinates.append([i, j, k])
+
+
+# Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. You are given
+
+# scores. Store them in a list and find the score of the runner-up.
+
+# Input Format
+
+# The first line contains
+# . The second line contains an array of integers each separated by a space. 
+
+n = int(input())
+arr = map(int, input().split())
+
+scores = list(set(arr))
+
+scores.sort(reverse = True)
+
+runner_up_score = scores[1]
+
+print(runner_up_score)
