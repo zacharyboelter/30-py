@@ -214,6 +214,9 @@ def get_ascii_char(number):
         return chr(number)
     else:
         return "Invalid input. Please provide a number between 0 and 127."
+    
+def get_char(num):
+    return chr(num)
 
 class TestGetAsciiChar(unittest.TestCase):
 
