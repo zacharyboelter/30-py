@@ -209,8 +209,8 @@ print(runner_up_score)
 
 # Write a function which takes a number and returns the corresponding ASCII char for that value.
 
-def get_char(number):
-    if 0 <= number <= 127:
+def get_ascii_char(number):
+    if 0 <= number <= 256:
         return chr(number)
     else:
         return "Invalid input. Please provide a number between 0 and 127."
