@@ -1,4 +1,5 @@
 import math
+import unittest
 
 # Euclidean Distance
 # Find an Euclidian distance between (2, 3) and (10, 8)
@@ -205,3 +206,27 @@ scores.sort(reverse = True)
 runner_up_score = scores[1]
 
 print(runner_up_score)
+
+# Write a function which takes a number and returns the corresponding ASCII char for that value.
+
+def get_char(number):
+    if 0 <= number <= 127:
+        return chr(number)
+    else:
+        return "Invalid input. Please provide a number between 0 and 127."
+
+class TestGetAsciiChar(unittest.TestCase):
+
+    def test_valid_input(self):
+        self.assertEqual(get_ascii_char(65), "A")
+        self.assertEqual(get_ascii_char(97), "a")
+        self.assertEqual(get_ascii_char(33), "!")
+        self.assertEqual(get_ascii_char(126), "~")
+
+    def test_invalid_input(self):
+        self.assertEqual(get_ascii_char(-1), "Invalid input. Please provide a number between 0 and 127.")
+        self.assertEqual(get_ascii_char(128), "Invalid input. Please provide a number between 0 and 127.")
+        self.assertEqual(get_ascii_char(2000), "Invalid input. Please provide a number between 0 and 127.")
+
+if __name__ == '__main__':
+    unittest.main()
